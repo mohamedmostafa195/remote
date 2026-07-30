@@ -3,6 +3,7 @@ export const mfConfig = {
   exposes: {
     "./counter": "./src/counter.jsx"
   },
+  dts: false,
   shared: ["react", "react-dom"],
 };
 
