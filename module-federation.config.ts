@@ -4,6 +4,10 @@ export const mfConfig = {
     "./counter": "./src/counter.jsx"
   },
   dts: false,
-  shared: ["react", "react-dom"],
+  shared: {
+    react: { singleton: true },
+    "react-dom": { singleton: true },
+  },
 };
+
 
