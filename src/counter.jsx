@@ -55,58 +55,62 @@ export default function Counter() {
   return (
     <div style={{
       fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-      backgroundColor: "#0b0f19",
-      color: "#f8fafc",
+      backgroundColor: "#050507",
+      color: "#f4f4f5",
       minHeight: "100vh",
       borderRadius: "24px",
       padding: "2.5rem 1.5rem",
       maxWidth: "1100px",
       margin: "1rem auto",
-      boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
-      border: "1px solid rgba(255, 255, 255, 0.08)",
+      boxShadow: "0 30px 90px rgba(0, 0, 0, 0.95)",
+      border: "1px solid rgba(255, 255, 255, 0.12)",
       position: "relative",
       overflow: "hidden"
     }}>
-      {/* Background Radial Lights */}
+      {/* Monochrome Minimalist Radial Glow Light */}
       <div style={{
         position: "absolute",
-        top: "-150px",
+        top: "-160px",
         left: "50%",
         transform: "translateX(-50%)",
-        width: "600px",
-        height: "400px",
-        background: "radial-gradient(ellipse at center, rgba(99, 102, 241, 0.25) 0%, rgba(168, 85, 247, 0.1) 40%, rgba(0,0,0,0) 70%)",
+        width: "700px",
+        height: "450px",
+        background: "radial-gradient(ellipse at center, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(0,0,0,0) 75%)",
         pointerEvents: "none"
       }} />
 
       {/* NAVBAR */}
       <header style={{
         display: "flex",
-        justify: "space-between",
+        justifyContent: "space-between",
         alignItems: "center",
         paddingBottom: "1.5rem",
         marginBottom: "3rem",
-        borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
+        borderBottom: "1px solid rgba(255, 255, 255, 0.1)"
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <div style={{
             width: "44px",
             height: "44px",
             borderRadius: "12px",
-            background: "linear-gradient(135deg, #6366f1, #a855f7)",
+            background: "#ffffff",
             display: "flex",
             alignItems: "center",
             justify: "center",
-            fontWeight: "800",
+            fontWeight: "900",
             fontSize: "1.2rem",
-            color: "#fff",
-            boxShadow: "0 0 20px rgba(99, 102, 241, 0.4)"
+            color: "#000000",
+            boxShadow: "0 0 20px rgba(255, 255, 255, 0.25)"
           }}>
             MM
           </div>
           <div>
-            <div style={{ fontSize: "1.1rem", fontWeight: "700", letterSpacing: "-0.02em" }}>Mohamed Mostafa</div>
-            <div style={{ fontSize: "0.78rem", color: "#818cf8", fontWeight: "600" }}>Front-End Developer</div>
+            <div style={{ fontSize: "1.1rem", fontWeight: "800", letterSpacing: "-0.02em", color: "#ffffff" }}>
+              Mohamed Mostafa
+            </div>
+            <div style={{ fontSize: "0.78rem", color: "#a1a1aa", fontWeight: "600" }}>
+              Senior Front-End Engineer
+            </div>
           </div>
         </div>
 
@@ -116,9 +120,9 @@ export default function Counter() {
           gap: "8px",
           padding: "6px 14px",
           borderRadius: "20px",
-          background: "rgba(16, 185, 129, 0.1)",
-          border: "1px solid rgba(16, 185, 129, 0.3)",
-          color: "#34d399",
+          background: "rgba(255, 255, 255, 0.06)",
+          border: "1px solid rgba(255, 255, 255, 0.15)",
+          color: "#ffffff",
           fontSize: "0.8rem",
           fontWeight: "600"
         }}>
@@ -126,38 +130,38 @@ export default function Counter() {
             width: "8px",
             height: "8px",
             borderRadius: "50%",
-            backgroundColor: "#10b981",
-            boxShadow: "0 0 10px #10b981"
+            backgroundColor: "#ffffff",
+            boxShadow: "0 0 10px #ffffff"
           }} />
           Available for Hire
         </div>
       </header>
 
       {/* HERO SECTION */}
-      <section style={{ textAlign: "center", padding: "1rem 0 3rem" }}>
+      <section style={{ textAlign: "center", padding: "1rem 0 3.5rem" }}>
         <span style={{
           display: "inline-block",
-          padding: "6px 16px",
+          padding: "6px 18px",
           borderRadius: "30px",
-          background: "rgba(99, 102, 241, 0.12)",
-          border: "1px solid rgba(99, 102, 241, 0.3)",
-          color: "#a5b4fc",
+          background: "rgba(255, 255, 255, 0.06)",
+          border: "1px solid rgba(255, 255, 255, 0.15)",
+          color: "#e4e4e7",
           fontSize: "0.85rem",
           fontWeight: "600",
           marginBottom: "1.5rem",
-          letterSpacing: "0.05em",
+          letterSpacing: "0.08em",
           textTransform: "uppercase"
         }}>
           ✨ Crafting Next-Gen Web Experiences
         </span>
 
         <h1 style={{
-          fontSize: "3.2rem",
+          fontSize: "3.4rem",
           fontWeight: "900",
           lineHeight: "1.15",
           letterSpacing: "-0.03em",
           margin: "0 0 1.5rem 0",
-          background: "linear-gradient(135deg, #ffffff 30%, #a5b4fc 70%, #c084fc 100%)",
+          background: "linear-gradient(135deg, #ffffff 40%, #a1a1aa 80%, #71717a 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent"
         }}>
@@ -170,23 +174,23 @@ export default function Counter() {
           margin: "0 auto 2.5rem auto",
           fontSize: "1.15rem",
           lineHeight: "1.6",
-          color: "#94a3b8"
+          color: "#a1a1aa"
         }}>
           I build high-performance, pixel-perfect web applications, modern design systems, and micro-frontend architectures with React, TypeScript & modern UI toolkits.
         </p>
 
-        {/* CTA Buttons */}
+        {/* CTA Buttons - Monochrome Contrast */}
         <div style={{ display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap" }}>
           <a
             href="mailto:contact@mohamedmostafa.dev"
             style={{
-              padding: "12px 28px",
+              padding: "12px 30px",
               borderRadius: "14px",
-              background: "linear-gradient(135deg, #6366f1, #a855f7)",
-              color: "#ffffff",
-              fontWeight: "700",
+              background: "#ffffff",
+              color: "#000000",
+              fontWeight: "800",
               textDecoration: "none",
-              boxShadow: "0 10px 25px rgba(99, 102, 241, 0.4)",
+              boxShadow: "0 10px 30px rgba(255, 255, 255, 0.2)",
               transition: "transform 0.2s ease"
             }}
           >
@@ -196,11 +200,11 @@ export default function Counter() {
           <button
             onClick={() => alert('Downloading Mohamed Mostafa Front-End Engineer CV...')}
             style={{
-              padding: "12px 24px",
+              padding: "12px 26px",
               borderRadius: "14px",
-              background: "rgba(255, 255, 255, 0.06)",
-              border: "1px solid rgba(255, 255, 255, 0.12)",
-              color: "#f8fafc",
+              background: "#18181b",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              color: "#ffffff",
               fontWeight: "600",
               cursor: "pointer"
             }}
@@ -226,12 +230,12 @@ export default function Counter() {
           <div key={idx} style={{
             padding: "1.5rem",
             borderRadius: "18px",
-            background: "rgba(15, 23, 42, 0.6)",
-            border: "1px solid rgba(255, 255, 255, 0.06)",
+            background: "#121215",
+            border: "1px solid rgba(255, 255, 255, 0.08)",
             textAlign: "center"
           }}>
-            <div style={{ fontSize: "1.8rem", fontWeight: "800", color: "#6366f1" }}>{stat.value}</div>
-            <div style={{ fontSize: "0.85rem", color: "#94a3b8", marginTop: "4px" }}>{stat.label}</div>
+            <div style={{ fontSize: "1.8rem", fontWeight: "900", color: "#ffffff" }}>{stat.value}</div>
+            <div style={{ fontSize: "0.85rem", color: "#a1a1aa", marginTop: "4px" }}>{stat.label}</div>
           </div>
         ))}
       </section>
@@ -240,8 +244,8 @@ export default function Counter() {
       <section style={{
         padding: "2rem",
         borderRadius: "24px",
-        background: "linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.8))",
-        border: "1px solid rgba(99, 102, 241, 0.2)",
+        background: "linear-gradient(135deg, #121215 0%, #09090b 100%)",
+        border: "1px solid rgba(255, 255, 255, 0.15)",
         marginBottom: "4rem",
         position: "relative"
       }}>
@@ -254,10 +258,10 @@ export default function Counter() {
           marginBottom: "1.5rem"
         }}>
           <div>
-            <span style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#818cf8", fontWeight: "700" }}>
+            <span style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.12em", color: "#a1a1aa", fontWeight: "700" }}>
               LIVE INTERACTIVE DEMO MODULE
             </span>
-            <h2 style={{ margin: "4px 0 0 0", fontSize: "1.5rem", fontWeight: "800" }}>
+            <h2 style={{ margin: "4px 0 0 0", fontSize: "1.5rem", fontWeight: "800", color: "#ffffff" }}>
               High-Frequency Counter Engine
             </h2>
           </div>
@@ -265,12 +269,12 @@ export default function Counter() {
           <button
             onClick={() => setIsAutoBoosting(!isAutoBoosting)}
             style={{
-              padding: "8px 16px",
+              padding: "8px 18px",
               borderRadius: "12px",
-              border: "none",
-              background: isAutoBoosting ? "#ef4444" : "#10b981",
-              color: "#fff",
-              fontWeight: "700",
+              border: isAutoBoosting ? "1px solid rgba(239, 68, 68, 0.4)" : "1px solid rgba(255, 255, 255, 0.2)",
+              background: isAutoBoosting ? "rgba(239, 68, 68, 0.2)" : "#ffffff",
+              color: isAutoBoosting ? "#f87171" : "#000000",
+              fontWeight: "800",
               fontSize: "0.85rem",
               cursor: "pointer"
             }}
@@ -286,19 +290,19 @@ export default function Counter() {
           gap: "16px",
           alignItems: "center",
           textAlign: "center",
-          background: "rgba(0, 0, 0, 0.4)",
+          background: "#050507",
           padding: "1.5rem",
           borderRadius: "18px",
-          border: "1px solid rgba(255, 255, 255, 0.05)"
+          border: "1px solid rgba(255, 255, 255, 0.08)"
         }}>
           <button
             onClick={() => setMetricCount(c => c - 10)}
             style={{
               padding: "1rem",
               borderRadius: "14px",
-              border: "none",
-              background: "rgba(239, 68, 68, 0.2)",
-              color: "#f87171",
+              border: "1px solid rgba(255, 255, 255, 0.12)",
+              background: "#18181b",
+              color: "#ffffff",
               fontSize: "1.3rem",
               fontWeight: "800",
               cursor: "pointer"
@@ -308,16 +312,16 @@ export default function Counter() {
           </button>
 
           <div>
-            <div style={{ fontSize: "0.8rem", color: "#94a3b8" }}>ACTIVE METRIC VALUE</div>
+            <div style={{ fontSize: "0.8rem", color: "#a1a1aa", letterSpacing: "0.05em" }}>ACTIVE METRIC VALUE</div>
             <div style={{
               fontSize: "3.5rem",
               fontWeight: "900",
-              color: "#38bdf8",
-              textShadow: "0 0 20px rgba(56, 189, 248, 0.4)"
+              color: "#ffffff",
+              textShadow: "0 0 25px rgba(255, 255, 255, 0.3)"
             }}>
               {metricCount.toLocaleString()}
             </div>
-            <div style={{ fontSize: "0.75rem", color: "#34d399" }}>
+            <div style={{ fontSize: "0.75rem", color: "#a1a1aa" }}>
               ● Responsive State Synchronized
             </div>
           </div>
@@ -328,8 +332,8 @@ export default function Counter() {
               padding: "1rem",
               borderRadius: "14px",
               border: "none",
-              background: "rgba(16, 185, 129, 0.2)",
-              color: "#34d399",
+              background: "#ffffff",
+              color: "#000000",
               fontSize: "1.3rem",
               fontWeight: "800",
               cursor: "pointer"
@@ -343,14 +347,14 @@ export default function Counter() {
       {/* TECH STACK & SKILLS */}
       <section style={{ marginBottom: "4rem" }}>
         <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-          <h2 style={{ fontSize: "1.8rem", fontWeight: "800", margin: "0 0 0.5rem 0" }}>
+          <h2 style={{ fontSize: "1.8rem", fontWeight: "800", margin: "0 0 0.5rem 0", color: "#ffffff" }}>
             Technical Expertise & Stack
           </h2>
-          <p style={{ color: "#94a3b8", margin: 0 }}>
+          <p style={{ color: "#a1a1aa", margin: 0 }}>
             Tools and frameworks I use to craft scalable web experiences
           </p>
 
-          {/* Skill Filters */}
+          {/* Skill Filters - Monochrome Tabs */}
           <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "1.2rem" }}>
             {[
               { id: 'all', label: 'All Stack' },
@@ -362,12 +366,12 @@ export default function Counter() {
                 key={cat.id}
                 onClick={() => setActiveSkillCategory(cat.id)}
                 style={{
-                  padding: "6px 14px",
+                  padding: "6px 16px",
                   borderRadius: "20px",
-                  border: "none",
-                  background: activeSkillCategory === cat.id ? "#6366f1" : "rgba(255, 255, 255, 0.06)",
-                  color: activeSkillCategory === cat.id ? "#fff" : "#94a3b8",
-                  fontWeight: "600",
+                  border: activeSkillCategory === cat.id ? "none" : "1px solid rgba(255, 255, 255, 0.12)",
+                  background: activeSkillCategory === cat.id ? "#ffffff" : "#18181b",
+                  color: activeSkillCategory === cat.id ? "#000000" : "#a1a1aa",
+                  fontWeight: "700",
                   fontSize: "0.8rem",
                   cursor: "pointer"
                 }}
@@ -387,22 +391,23 @@ export default function Counter() {
             <div key={index} style={{
               padding: "1rem 1.2rem",
               borderRadius: "16px",
-              background: "rgba(15, 23, 42, 0.5)",
-              border: "1px solid rgba(255, 255, 255, 0.06)",
+              background: "#121215",
+              border: "1px solid rgba(255, 255, 255, 0.08)",
               display: "flex",
               alignItems: "center",
               justify: "space-between"
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                 <span style={{ fontSize: "1.2rem" }}>{skill.icon}</span>
-                <span style={{ fontWeight: "600", fontSize: "0.95rem" }}>{skill.name}</span>
+                <span style={{ fontWeight: "600", fontSize: "0.95rem", color: "#ffffff" }}>{skill.name}</span>
               </div>
               <span style={{
                 fontSize: "0.72rem",
-                padding: "3px 8px",
+                padding: "3px 10px",
                 borderRadius: "10px",
-                background: "rgba(99, 102, 241, 0.15)",
-                color: "#a5b4fc",
+                background: "rgba(255, 255, 255, 0.08)",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                color: "#e4e4e7",
                 fontWeight: "700"
               }}>
                 {skill.level}
@@ -414,7 +419,7 @@ export default function Counter() {
 
       {/* FEATURED PROJECTS */}
       <section style={{ marginBottom: "4rem" }}>
-        <h2 style={{ fontSize: "1.8rem", fontWeight: "800", marginBottom: "1.5rem", textAlign: "center" }}>
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "800", marginBottom: "1.5rem", textAlign: "center", color: "#ffffff" }}>
           Featured Architectures & Projects
         </h2>
 
@@ -427,8 +432,8 @@ export default function Counter() {
             <div key={idx} style={{
               padding: "1.8rem",
               borderRadius: "20px",
-              background: "rgba(15, 23, 42, 0.6)",
-              border: "1px solid rgba(255, 255, 255, 0.08)",
+              background: "#121215",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
               display: "flex",
               flexDirection: "column",
               justify: "space-between"
@@ -436,20 +441,20 @@ export default function Counter() {
               <div>
                 <span style={{
                   fontSize: "0.75rem",
-                  padding: "4px 10px",
+                  padding: "4px 12px",
                   borderRadius: "12px",
-                  background: "rgba(168, 85, 247, 0.15)",
-                  color: "#c084fc",
-                  fontWeight: "700",
+                  background: "#ffffff",
+                  color: "#000000",
+                  fontWeight: "800",
                   display: "inline-block",
                   marginBottom: "1rem"
                 }}>
                   {proj.badge}
                 </span>
-                <h3 style={{ margin: "0 0 0.6rem 0", fontSize: "1.25rem", fontWeight: "700" }}>
+                <h3 style={{ margin: "0 0 0.6rem 0", fontSize: "1.25rem", fontWeight: "800", color: "#ffffff" }}>
                   {proj.title}
                 </h3>
-                <p style={{ fontSize: "0.9rem", color: "#94a3b8", lineHeight: "1.5", margin: "0 0 1.2rem 0" }}>
+                <p style={{ fontSize: "0.9rem", color: "#a1a1aa", lineHeight: "1.5", margin: "0 0 1.2rem 0" }}>
                   {proj.desc}
                 </p>
               </div>
@@ -460,8 +465,9 @@ export default function Counter() {
                     fontSize: "0.75rem",
                     padding: "3px 10px",
                     borderRadius: "8px",
-                    background: "rgba(255,255,255,0.05)",
-                    color: "#cbd5e1"
+                    background: "rgba(255,255,255,0.06)",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    color: "#d4d4d8"
                   }}>
                     {t}
                   </span>
@@ -475,13 +481,13 @@ export default function Counter() {
       {/* FOOTER & CONTACT SIGNATURE */}
       <footer style={{
         paddingTop: "2rem",
-        borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+        borderTop: "1px solid rgba(255, 255, 255, 0.1)",
         textAlign: "center"
       }}>
-        <div style={{ fontSize: "1.2rem", fontWeight: "800", marginBottom: "0.5rem" }}>
+        <div style={{ fontSize: "1.2rem", fontWeight: "800", marginBottom: "0.5rem", color: "#ffffff" }}>
           Mohamed Mostafa
         </div>
-        <p style={{ fontSize: "0.9rem", color: "#94a3b8", margin: "0 0 1.5rem 0" }}>
+        <p style={{ fontSize: "0.9rem", color: "#a1a1aa", margin: "0 0 1.5rem 0" }}>
           Building clean, scalable & intuitive user interfaces for modern web platforms.
         </p>
 
@@ -490,7 +496,7 @@ export default function Counter() {
           justify: "center",
           gap: "16px",
           fontSize: "0.88rem",
-          color: "#818cf8",
+          color: "#e4e4e7",
           fontWeight: "600",
           marginBottom: "1.5rem"
         }}>
@@ -500,12 +506,11 @@ export default function Counter() {
           <span>📧 Email</span>
         </div>
 
-        <div style={{ fontSize: "0.78rem", color: "#64748b" }}>
+        <div style={{ fontSize: "0.78rem", color: "#71717a" }}>
           © {new Date().getFullYear()} Mohamed Mostafa • All rights reserved.
         </div>
       </footer>
     </div>
   );
 }
-
 
