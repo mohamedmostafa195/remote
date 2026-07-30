@@ -12,6 +12,12 @@ const isDev = process.env.NODE_ENV === "development";
 // Target browsers, see: https://github.com/browserslist/browserslist
 const targets = ["chrome >= 87", "edge >= 88", "firefox >= 78", "safari >= 14"];
 
+const publicPath =
+  process.env.PUBLIC_PATH ||
+  (process.env.NODE_ENV === "production"
+    ? (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/` : "https://remote-iota-wheat.vercel.app/")
+    : "http://localhost:3000/");
+
 export default defineConfig({
   context: __dirname,
   entry: {
@@ -33,7 +39,7 @@ export default defineConfig({
     // You need to set a unique value that is not equal to other applications
     uniqueName: "remote",
     // publicPath must be configured if using manifest
-    publicPath: "auto",
+    publicPath: publicPath,
   },
 
   experiments: {
