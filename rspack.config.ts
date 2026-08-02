@@ -12,6 +12,18 @@ const isDev = process.env.NODE_ENV === "development";
 // Target browsers, see: https://github.com/browserslist/browserslist
 const targets = ["chrome >= 87", "edge >= 88", "firefox >= 78", "safari >= 14"];
 
+const getPublicPath = () => {
+  if (process.env.PUBLIC_PATH) {
+    return process.env.PUBLIC_PATH.endsWith("/")
+      ? process.env.PUBLIC_PATH
+      : `${process.env.PUBLIC_PATH}/`;
+  }
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}/`;
+  }
+  return isDev ? "http://localhost:3000/" : "auto";
+};
+
 export default defineConfig({
   context: __dirname,
   entry: {
@@ -33,7 +45,7 @@ export default defineConfig({
     // You need to set a unique value that is not equal to other applications
     uniqueName: "remote",
     // publicPath must be configured when using manifest in Module Federation
-    publicPath: process.env.PUBLIC_PATH || (isDev ? "http://localhost:3000/" : "https://remote-drab.vercel.app/"),
+    publicPath: getPublicPath(),
   },
 
   experiments: {
