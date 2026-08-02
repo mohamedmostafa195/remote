@@ -18,8 +18,11 @@ const getPublicPath = () => {
       ? process.env.PUBLIC_PATH
       : `${process.env.PUBLIC_PATH}/`;
   }
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}/`;
+  // Prefer stable production URL on Vercel over temporary commit preview URLs
+  const vercelDomain = process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL;
+  if (vercelDomain) {
+    const cleanDomain = vercelDomain.replace(/^https?:\/\//, "").replace(/\/$/, "");
+    return `https://${cleanDomain}/`;
   }
   return isDev ? "http://localhost:3000/" : "auto";
 };
