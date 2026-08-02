@@ -422,7 +422,7 @@ export default function SoldOutStore() {
               lineHeight: "1.6",
               margin: "0 0 2rem 0"
             }}>
-              Heavyweight GSM fabrics, architectural drop-shoulder fits, and custom hardware. Designed in Tokyo, crafted for the global vanguard.
+              Heavyweight GSM fabrics, architectural drop-shoulder fits, and custom hardware. Designed in Tokyo, crafted for the global vanguard. In Egypt
             </p>
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
@@ -712,7 +712,7 @@ export default function SoldOutStore() {
                       <div style={{ flex: 1 }}>
                         <div style={{ fontSize: "0.95rem", fontWeight: "800", color: "#ffffff" }}>{item.title}</div>
                         <div style={{ fontSize: "0.8rem", color: "#a1a1aa" }}>Size: {item.size} &bull; ${item.price}</div>
-                        
+
                         {/* Quantity Control */}
                         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginTop: "6px" }}>
                           <button onClick={() => updateQty(item.id, -1)} style={{ padding: "2px 8px", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.2)", background: "none", color: "#fff", cursor: "pointer" }}>-</button>
