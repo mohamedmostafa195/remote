@@ -32,8 +32,8 @@ export default defineConfig({
   output: {
     // You need to set a unique value that is not equal to other applications
     uniqueName: "remote",
-    // publicPath must be configured if using manifest
-    publicPath: "auto",
+    // publicPath must be configured when using manifest in Module Federation
+    publicPath: process.env.PUBLIC_PATH || (isDev ? "http://localhost:3000/" : "https://remote-drab.vercel.app/"),
   },
 
   experiments: {
