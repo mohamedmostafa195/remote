@@ -1,14 +1,11 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
-import Counter from "./counter";
+import SoldOutStore from "./counter";
 
 const App = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-
-    {/* <Counter /> */}
-    
-  </div>
+  <SoldOutStore />
 );
 
 const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);
