@@ -166,7 +166,7 @@ export default function Counter() {
           WebkitTextFillColor: "transparent"
         }}>
           Hi, I'm ahmed ismaill.<br />
-          consultant Front-End Engineer.
+          Eng. Front-End Engineer.
         </h1>
 
         <p style={{
