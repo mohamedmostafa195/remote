@@ -165,8 +165,8 @@ export default function Counter() {
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent"
         }}>
-          Hi, I'm ahmed ismaill.<br /> 
-          Senior Front-End Engineer.
+          Hi, I'm ahmed ismaill.<br />
+          consultant Front-End Engineer.
         </h1>
 
         <p style={{
